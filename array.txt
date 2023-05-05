@@ -1,0 +1,37 @@
+
+package array1;
+
+class emp{
+String name, email, phone;
+public void getdata(){
+    System.out.println(this.name + "   " + this.email + "   " + this.phone  );  
+}
+}
+
+public class Array1 {  
+    public static void main(String[] args) {
+       String [][] Employees ={
+        {"Jeanete","jeanete@gmail.com","123456789"},
+        {"Waheed","waheed@gmail.com","123456789"},
+        {"Zunaira","zunaira@gmail.com","123456789"},
+        {"Shuja","shuja@gmail.com","123456789"}
+        
+    }; 
+       for(int i = 0; i< Employees.length; i++){
+       emp e = new emp();
+       for (int j =0; j < Employees[i].length; j++){
+         if(j==0){
+         e.name = Employees[i][j];
+         }
+          else if(j==1){
+         e.email = Employees[i][j];
+         }
+            else if(j==2){
+         e.phone = Employees[i][j];
+         }
+       }
+       e.getdata();
+       }
+    }
+    
+}
